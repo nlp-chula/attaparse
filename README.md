@@ -42,17 +42,27 @@ print(f'\n{text}\n',*[f'id: {word.id}\tword: {word.text}\thead id: {word.head}\t
 ## Citation
 If you use `attaparse` in your project or publication, please cite as follows:
 
+Panyut Sriwirote, Wei Qi Leong, Charin Polpanumas, Santhawat Thanyawong, William Chandra Tjhi, Wirote Aroonmanakun, and Attapol T. Rutherford. 2025. The Thai Universal Dependency Treebank. Transactions of the Association for Computational Linguistics, 13:376–391.
+
 *BibTex*
 
 ```
-@article{Sriwirote-etal-2024-TUD,
-  title={The Thai Universal Dependency Treebank},
-  author={Panyut Sriwirote and Wei Qi Leong and 
-  Charin Polpanumas and Santhawat Thanyawong  and 
-  William Chandra Tjhi and Wirote Aroonmanakun and 
-  Attapol T. Rutherford},
-  journal={Transactions of the Association for Computational Linguistics},
-  year={in press},
-  publisher={MIT Press Direct}
+@article{sriwirote-etal-2025-thai,
+    title = "The {T}hai {U}niversal {D}ependency Treebank",
+    author = "Sriwirote, Panyut  and
+      Leong, Wei Qi  and
+      Polpanumas, Charin  and
+      Thanyawong, Santhawat  and
+      Tjhi, William Chandra  and
+      Aroonmanakun, Wirote  and
+      Rutherford, Attapol T.",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "13",
+    year = "2025",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2025.tacl-1.18/",
+    doi = "10.1162/tacl_a_00745",
+    pages = "376--391"
 }
 ```
