@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "attaparse"
-version = "0.0.1"
+version = "1.0.0"
 description = "Thai dependency parser."
 authors = [
     {name = "Attapol Thamrongrattanarit", email = "profte@gmail.com"}
