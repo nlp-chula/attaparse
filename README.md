@@ -18,10 +18,21 @@ pip install attaparse
 ### Initialising
 
 ```python
-import attaparse
 from attaparse import load_model, depparse
 
 nlp = load_model()
+```
+
+#### Device Selection
+
+By default, attaparse runs on CPU. To use GPU acceleration:
+
+```python
+# NVIDIA GPU
+nlp = load_model(device="cuda")
+
+# Apple Silicon (M1/M2/M3)
+nlp = load_model(device="mps")
 ```
 
 ### Plain Text

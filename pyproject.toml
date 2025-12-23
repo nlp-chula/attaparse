@@ -4,19 +4,25 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "attaparse"
-version = "1.0.0"
+version = "1.0.1"
 description = "Thai dependency parser."
 authors = [
     {name = "Attapol Thamrongrattanarit", email = "profte@gmail.com"}
 ]
 classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Education",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Operating System :: MacOS :: MacOS X",
-    "Operating System :: Microsoft :: Windows"
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
 ]
-keywords = ["python", "Thai dependency", "Dependency parser"]
+keywords = ["thai", "dependency parser", "nlp", "stanza"]
 license = {text = "MIT"}
 requires-python = ">=3.8"
 
@@ -24,6 +30,7 @@ dependencies = ["stanza"]
 
 readme = "README.md"
 
-
 [project.urls]
 Homepage = "https://github.com/nlp-chula/attaparse"
+Repository = "https://github.com/nlp-chula/attaparse"
+Documentation = "https://github.com/nlp-chula/attaparse#readme"

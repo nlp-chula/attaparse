@@ -6,6 +6,8 @@ from .depparse import (
     STANZA_RESOURCES_DIR
 )
 
+__version__ = "1.0.1"
+
 __all__ = [
     'load_model',
     'depparse',

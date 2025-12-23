@@ -93,13 +93,18 @@ def lemma_process(self, document):
     document.set([doc.UPOS, doc.XPOS, doc.LEMMA], [['.', '.', '.']] * total_tokens)
     return document
 
-def load_model(tokenize_pretokenized=False):
+def load_model(tokenize_pretokenized=False, device=None):
     """
     Load the attaparse dependency parser model.
 
     Args:
         tokenize_pretokenized: If True, enable pretokenized mode for Stanza
                              (accepts list of token lists instead of raw text)
+        device: Device for inference. Options:
+                - None: CPU only (default, backward compatible)
+                - "cpu": Force CPU
+                - "cuda": Use NVIDIA GPU
+                - "mps": Use Apple Silicon GPU (M1/M2/M3)
 
     Returns:
         Stanza Pipeline object
@@ -118,7 +123,7 @@ def load_model(tokenize_pretokenized=False):
         depparse_pretrain_path=os.path.join(STANZA_RESOURCES_DIR, 'th', 'pretrain', 'fasttext157.pt'),
         depparse_forward_charlm_path=os.path.join(STANZA_RESOURCES_DIR, 'th', 'forward_charlm', 'oscar.pt'),
         depparse_backward_charlm_path=os.path.join(STANZA_RESOURCES_DIR, 'th', 'backward_charlm', 'oscar.pt'),
-        use_gpu=False,
+        device=device,
         pos_with_non=True,
         lemma_with_non=True
     )
